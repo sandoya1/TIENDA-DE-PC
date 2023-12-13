@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    background-color: #343a40; /* Fondo oscuro */
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #f8f9fa; /* Letras claras */
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Cambio de color al pasar el mouse */
+  }
+  
+  /* Título principal */
+  h1 {
+    color: #007bff; /* Azul brillante */
+    text-shadow: 1px 1px 2px #000; /* Sombra ligera */
+  }
+  
+  /* Tarjetas de productos */
+  .card {
+    transition: transform 0.2s; /* Animación suave */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+  }
+  
+  .card-title {
+    color: #17a2b8; /* Color distintivo para los títulos de las tarjetas */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+  }
+  
+  /* Media queries para responsividad */
+  @media (max-width: 768px) {
+    .navbar {
+      text-align: center;
+    }
+  }
+/* Estilos para las imágenes de los productos */
+.card-img-top {
+    width: 100%; /* Ajusta la imagen al ancho de la tarjeta */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantiene las proporciones de la imagen */
+  }
+/* Estilo para la ventana modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Estilo para la imagen en la ventana modal */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Estilo para el botón de cerrar */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+      

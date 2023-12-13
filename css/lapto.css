@@ -1,0 +1,150 @@
+:root {
+    /* Definición de colores principales */
+    --primary-color: #007bff;
+    --dark-color: #343a40;
+    --light-color: #f4f4f4;
+    --white-color: #fff;
+    --shadow-color: rgba(0,0,0,0.1);
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+  }
+  
+  /* Estilo mejorado para la barra de navegación */
+  .navbar {
+    background-color: var(--dark-color);
+    border-bottom: 4px solid var(--primary-color);
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.8em;
+    color: var(--white-color);
+  }
+  
+  .nav-link {
+    font-size: 1.2em;
+    color: var(--white-color);
+  }
+  
+  .nav-link:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Estilo para el contenido principal */
+  main {
+    background-color: var(--white-color);
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    margin-top: 20px;
+  }
+  
+  h1 {
+    color: var(--primary-color);
+    text-align: center;
+  }
+  
+  /* Estilos para las tarjetas de productos */
+  .card {
+    transition: all 0.3s ease-in-out;
+    border: none;
+  }
+  
+  .card:hover {
+    box-shadow: 0 6px 12px var(--shadow-color);
+  }
+  
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    color: var(--dark-color);
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 0.9em;
+  }
+  
+  .btn-outline-secondary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 10px 0;
+  }
+  
+  /* Estilos para responsive design */
+  @media (max-width: 992px) {
+    .navbar-brand {
+      font-size: 1.5em;
+    }
+  
+    .card-img-top {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  
+    main {
+      padding: 20px 10px;
+    }
+  }
+  
+  .pc-section {
+    display: flex; /* Activar Flexbox */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: space-between; /* Espacio entre el texto y la imagen */
+    margin: 20px; /* Margen para separar de otros elementos */
+  }
+  
+  .text, .image {
+    flex: 1; /* Flexibilidad para que ocupen espacio igual */
+    padding: 15px; /* Espaciado interno */
+  }
+  
+  .image {
+    text-align: center; /* Centrar la imagen dentro de su div */
+  }
+  
+  .pc-image {
+    width: 100%; /* La imagen ocupa todo el ancho de su contenedor */
+    height: auto; /* Mantener proporciones */
+    max-width: 400px; /* Máximo ancho de la imagen */
+  }
+  

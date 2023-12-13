@@ -1,0 +1,100 @@
+/* Variables */
+:root {
+  --primary-color: #33C3F0;
+  --secondary-color: #222;
+  --border-color: #eee;
+  --background-light: aliceblue;
+  --font-size-large: 1.4rem;
+  --font-size-medium: 1.2rem;
+  --font-size-small: 1.0rem;
+  --line-height-standard: 30px;
+  --spacing-large: 4rem;
+  --spacing-medium: 1.5rem;
+  --spacing-small: 0.75rem;
+  --transition-standard: all 0.3s ease;
+}
+
+/* Base styles */
+.container {
+  max-width: 1000px;
+}
+
+/* Components */
+.header,
+.value-prop,
+.value-props,
+.docs-header,
+.docs-section,
+.value-img,
+.example-grid .column,
+.example-grid .columns,
+.docs-example,
+.heading-font-size,
+.code-example,
+.code-example-body,
+.example,
+.example-header,
+.example-description,
+.example-screenshot-wrapper,
+.example-screenshot,
+.navbar {
+  transition: var(--transition-standard);
+}
+
+.header {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.value-prop {
+  margin-top: var(--spacing-medium);
+}
+
+.value-props {
+  margin-top: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+}
+
+.docs-header {
+  text-transform: uppercase;
+  font-size: var(--font-size-large);
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+}
+
+.docs-section {
+  border-top: 1px solid var(--border-color);
+  padding: var(--spacing-large) 0;
+  margin-bottom: 0;
+}
+
+.value-img {
+  display: block;
+  text-align: center;
+  margin: 2.5rem auto 0;
+}
+
+.example-grid .column,
+.example-grid .columns {
+  background: var(--background-light);
+  text-align: center;
+  border-radius: 4px;
+  font-size: 4rem;
+  text-transform: uppercase;
+  height: var(--line-height-standard);
+  line-height: var(--line-height-standard);
+  margin-bottom: var(--spacing-small);
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+/* ... (rest of your original CSS, updated with variables) */
+
+/* Media Queries */
+@media (min-width: 550px) {
+  /* ... (your media query styles updated with variables) */
+}
+
+@media (min-width: 750px) {
+  /* ... (your media query styles updated with variables) */
+}

@@ -1,0 +1,105 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Navegación */
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+/* Contenedor Principal y Títulos */
+.container {
+    padding: 20px;
+}
+
+h1 {
+    color: #007bff; /* Color distintivo para h1 */
+    font-size: 2.5em; /* Tamaño más grande para h1 */
+    margin-bottom: 0.5em;
+    text-align: center; /* Centrado para el título principal */
+    text-shadow: 2px 2px 4px #aaa; /* Sombra ligera para profundidad */
+}
+
+h2 {
+    color: #0066cc; /* Color ligeramente diferente para h2 */
+    font-size: 2em;
+    margin-bottom: 0.75em;
+    border-bottom: 2px solid #eee; /* Línea sutil debajo de h2 */
+    padding-bottom: 0.5em;
+}
+
+h3 {
+    color: #0056a3; /* Color más oscuro para h3 */
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase; /* Texto en mayúsculas para h3 */
+}
+
+/* Estilos para las Imágenes */
+img {
+    width: 60%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* Estilos para Formulario de Contacto */
+#contactForm {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        float: right;
+    }
+
+    img {
+        width: 100%;
+    }
+}

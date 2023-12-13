@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Accesorios de Computadoras</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Vinculación del archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../css/servicios.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Tienda</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INICIO <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/Escritorio.html">PC ESCRITORIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/Laptops.html">LAPTOPS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/Accesorios.html">ACCESORIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/Componentes.html">COMPONENTES</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../pages/Servicios.html">SERVICIOS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container my-4">
+        <h1>Bienvenidos a Nuestra Tienda de Accesorios de Computadoras</h1>
+
+        <h2 class="mt-5">Nuestros Servicios</h2>
+        <div>
+            <h3>Reparación y Mantenimiento</h3>
+            <img src="https://fundacioncarlosslim.org/wp-content/uploads/2021/09/tecnico-reparacion-laptops-2.jpg" alt="Reparación y Mantenimiento" class="img-fluid">
+            <p>Ofrecemos servicios de reparación y mantenimiento para todo tipo de equipos informáticos.</p>
+        </div>
+
+        <div>
+            <h3>Asesoramiento Técnico</h3>
+            <img src="https://abrirnegocio.com/wp-content/uploads/2021/02/tech-support-business-large.jpg" alt="Asesoramiento Técnico" class="img-fluid">
+            <p>Contamos con expertos para asesorarte en la compra y configuración de tu equipo ideal.</p>
+        </div>
+
+        <div>
+            <h3>Instalación de Software y Hardware</h3>
+            <img src="https://d29jy8ovkd5kcx.cloudfront.net/wp-content/uploads/2023/04/04175800/Que-es-un-sistema-operativo-Agustin-Jamele.jpg" alt="Instalación de Software y Hardware" class="img-fluid">
+            <p>Proporcionamos servicios de instalación y configuración de software y hardware.</p>
+        </div>
+
+        <h2 class="mt-5">Contáctanos</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-muted bg-dark py-4">
+      <div class="container">
+        <p class="mb-1">© Realizado por Isaias Sandoya Vargas. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Formulario enviado con éxito');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

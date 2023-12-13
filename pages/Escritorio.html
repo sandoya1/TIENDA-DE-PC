@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Accesorios de Computadoras</title>
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- JavaScript y dependencias de Bootstrap (incluyen jQuery y Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Vinculación del archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .pc-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .pc-section.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .text, .image {
+            flex: 1;
+        }
+
+        .text h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .text p {
+            font-size: 16px;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Estilo de los enlaces de navegación */
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #f8f9fa; /* Cambia el color al pasar el cursor */
+        }
+    </style>
+</head>
+<body>
+  <!-- Código del menú de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mi Tienda</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="../index.html">INICIO</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../pages/Escritorio.html">PC ESCRITORIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Laptops.html">LAPTOPS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Accesorios.html">ACCESORIOS<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Componentes.html">COMPONENTES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Servicios.html">SERVICIOS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ... (código del encabezado) -->
+
+  <!-- Aquí comienza el contenido de PCs de Escritorio -->
+  <header>
+    <img src="https://www.generacionuniversitaria.com.mx/wp-content/uploads/2023/04/Huawei-MateStation-S-scaled.webp" alt="Imagen Principal PC">
+  </header>
+  <h1>PCs de Escritorio</h1>
+
+  <!-- Sección de contenido - repetir según sea necesario -->
+  <section class="pc-section">
+    <div class="text">
+      <h2>PC Escritorio Modelo 1</h2>
+      <p>Descripción del PC Escritorio Modelo 1</p>
+    </div>
+    <div class="image">
+      <img src="https://img.gruporeforma.com/imagenes/960x640/6/21/5020149.jpg" alt="PC Escritorio Modelo 1">
+    </div>
+  </section>
+
+  <section class="pc-section reverse">
+    <div class="text">
+      <h2>PC Escritorio Modelo 2</h2>
+      <p>Descripción del PC Escritorio Modelo 2</p>
+    </div>
+    <div class="image">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_870734-MCO70281292734_072023-O.webp" alt="PC Escritorio Modelo 2">
+    </div>
+  </section>
+
+  <section class="pc-section">
+    <div class="text">
+      <h2>PC Escritorio Modelo 3</h2>
+      <p>Descripción del PC Escritorio Modelo 3</p>
+    </div>
+    <div class="image">
+      <img src="https://img.gruporeforma.com/imagenes/960x640/6/21/5020149.jpg" alt="PC Escritorio Modelo 1">
+    </div>
+  </section>
+
+  <section class="pc-section reverse">
+    <div class="text">
+      <h2>PC Escritorio Modelo 4</h2>
+      <p>Descripción del PC Escritorio Modelo 4</p>
+    </div>
+    <div class="image">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_870734-MCO70281292734_072023-O.webp" alt="PC Escritorio Modelo 2">
+    </div>
+  </section>
+
+  <!-- Más secciones según sea necesario -->
+
+  <footer>
+    <p>© Realizado por Isaias Sandoya Vargas. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
